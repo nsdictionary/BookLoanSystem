@@ -1,25 +1,35 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # BookLoanSystem
+
+과제
+
+과제 내용은 Ruby on Rails를 이용한 도서대출 시스템을 개발하는 것입니다.
+
+구체적인 요구사항은 아래와 같으며, 개발을 완료하신 후
+  - Database 설계 ERD
+  - Heroku url
+  - 소스코드가 업로드된 github url
+두 가지를 제출해주시면 됩니다.
+
+요구사항
+  1. 기술 스택
+  1.1. Heroku에 Deploy
+  1.2. Ruby on Rails 4+
+
+  2. 요구사항
+  2.1. Pages
+  2.1.1. 홈페이지
+  2.1.2. 가입 / 로그인 / 정보수정
+  2.1.3. 전체 도서 목록 / 도서 상세 정보
+  2.1.4. 대출 도서 목록
+  2.2. Actions
+  2.2.1. 대출 (전체 도서 목록 / 도서 상세 정보에서 가능)
+  2.2.2. 반납 (대출 도서 목록 / 대출 도서 상세 정보에서 가능)
+  2.3. Other Requirements
+  2.3.1. 도서별 대출가능 수량 관리 기능 (대출가능 도서 없을시 대출 불가)
+  2.3.2. 장서별 상태 기록 / 관리 가능 (분실상태 기록, 단 별도 페이지는 만들 필요 없음)
+  2.3.3. 도서 대출 히스토리 기록 / 관리 가능 (단 별도 페이지는 만들 필요 없음)
+  2.3.4. 어드민 페이지는 만들 필요 없음
+
+  3. 진행시 준수사항
+  3.1. Git으로 적절하게 진행상황 기록
+  3.2. 장서목록 - https://www.dropbox.com/sh/5g74zzxmv4i3fja/AACa7ZzWOxDaupduwq_lFaGRa?dl=0
