@@ -7,16 +7,6 @@ class LoanHistoriesController < ApplicationController
     @loan_histories = LoanHistory.where(user_id: current_user.id)
   end
 
-  # GET /loan_histories/1
-  # GET /loan_histories/1.json
-  def show
-  end
-
-  # GET /loan_histories/new
-  def new
-    @loan_history = LoanHistory.new
-  end
-
   def edit
 	  @loan_history = LoanHistory.find(params[:id])
     @loan_history.return_date = Date.today.to_s
