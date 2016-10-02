@@ -1,19 +1,281 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  genre: MyString
-  title: MyString
-  author: MyString
-  publisher: MyString
-  quantity: 1
+1:
+  id: 1
+  genre: 문학예술
+  title: 내 생애 첫 번째 시
+  author: 안대회 편역
+  publisher: 보림
+  quantity: 10
   lost: 1
-  isbn: MyString
+  isbn: 9788943310417
 
-two:
-  genre: MyString
-  title: MyString
-  author: MyString
-  publisher: MyString
+2:
+  id: 2
+  genre: 문학예술
+  title: 별에서 별까지
+  author: 신형건
+  publisher: 푸른책들
+  quantity: 6
+  lost: 0
+  isbn: 9788957985151
+
+3:
+  id: 3
+  genre: 인문학
+  title: 정조, 나무를 심다
+  author: 김은경
+  publisher: 북촌
+  quantity: 7
+  lost: 0
+  isbn: 9791195509140
+
+4:
+  id: 4
+  genre: 사회과학
+  title: 청소년을 위한 음식의 사회학
+  author: 폴라 에이어 글, 이라 올레니나 그림 /김아림
+  publisher: 그린북
+  quantity: 8
+  lost: 2
+  isbn: 9788955883183
+
+5:
+  id: 5
+  genre: 사회과학
+  title: 4차 산업혁명 세상을 바꾸는 14가지 미래기술
+  author: 한국경제TV 산업팀
+  publisher: 지식노마드
   quantity: 1
+  lost: 0
+  isbn: 9788993322897
+
+6:
+  id: 6
+  genre: 자연과학
+  title: 별자리가 내게로 왔어요
+  author: 트라우디 라이흐 글, 카틀렌 볼터 그림/노선정
+  publisher: 청어람미디어
+  quantity: 3
+  lost: 0
+  isbn: 9791158710163
+
+7:
+  id: 7
+  genre: 실용일반
+  title: 3일 후, 기적이 일어나는 일기
+  author: Happy/최윤영
+  publisher: 멜론
+  quantity: 1
+  lost: 0
+  isbn: 9788994175560
+
+8:
+  id: 8
+  genre: 유아아동
+  title: 녹디생이, 사라진 변기를 찾아라
+  author: 김원석 글, 송진욱 그림
+  publisher: 머스트비
+  quantity: 6
+  lost: 0
+  isbn: 9788998433963
+
+9:
+  id: 9
+  genre: 유아아동
+  title: 실비아 플라스 동화집
+  author: 실비아 플라스/오현아
+  publisher: 마음산책
+  quantity: 7
+  lost: 2
+  isbn: 9788960902657
+
+10:
+  id: 10
+  genre: 유아아동
+  title: 행복해라, 물개
+  author: 주디스 커/길상효
+  publisher: 씨드북
+  quantity: 7
+  lost: 0
+  isbn: 9791185751658
+
+11:
+  id: 11
+  genre: 문학예술
+  title: 김구 말꽃모음
+  author: 김구 글, 이주영 엮음
+  publisher: 단비
+  quantity: 8
   lost: 1
-  isbn: MyString
+  isbn: 9791185099781
+
+12:
+  id: 12
+  genre: 문학예술
+  title: 직지를 찍는 아이, 아로
+  author: 정명섭
+  publisher: 다른
+  quantity: 7
+  lost: 1
+  isbn: 9791156330882
+
+13:
+  id: 13
+  genre: 문학예술
+  title: 이타와파, 세상의 끝
+  author: 자비에 로랑 쁘띠/이희정
+  publisher: 밝은미래
+  quantity: 6
+  lost: 0
+  isbn: 9788965462316
+
+14:
+  id: 14
+  genre: 인문학
+  title: 나를 마주하는 용기
+  author: 에밀리-앤 리걸, 진 디머스/유영훈
+  publisher: 나무생각
+  quantity: 2
+  lost: 1
+  isbn: 9791186688441
+
+15:
+  id: 15
+  genre: 자연과학
+  title: 와! 물맴이다
+  author: 손윤한
+  publisher: 지성사
+  quantity: 8
+  lost: 1
+  isbn: 9788978893169
+
+16:
+  id: 16
+  genre: 실용일반
+  title: 10대, 나만의 꿈과 마주하라
+  author: 강다현
+  publisher: 글라이더
+  quantity: 2
+  lost: 0
+  isbn: 9791186510261
+
+17:
+  id: 17
+  genre: 유아아동
+  title: 꼬레아에서 온 아이
+  author: 이슬인
+  publisher: 바람의아이들
+  quantity: 9
+  lost: 0
+  isbn: 9788994475745
+
+18:
+  id: 18
+  genre: 유아아동
+  title: 안데르센 동화집(4~7)
+  author: 한스 크리스티안 안데르센 글, 빌헬름 페데르센 외 그림/햇살과나무꾼
+  publisher: 시공주니어
+  quantity: 4
+  lost: 0
+  isbn: 9788952759054
+
+19:
+  id: 19
+  genre: 유아아동
+  title: 유령과 함께한 일주일
+  author: 김정미 글, 전병준 그림
+  publisher: 교학사
+  quantity: 10
+  lost: 0
+  isbn: 9788909193887
+
+20:
+  id: 20
+  genre: 문학예술
+  title: 2120년에서 친구가 찾아왔다
+  author: 안야 슈튀르처 글, 율리아 뒤어 그림/김완균
+  publisher: 푸른숲주니어
+  quantity: 4
+  lost: 0
+  isbn: 9791156750925
+
+21:
+  id: 21
+  genre: 인문학
+  title: 어린이와 청소년이 함께 읽는 마지막 선비 최익현
+  author: 이승하
+  publisher: 나남
+  quantity: 6
+  lost: 0
+  isbn: 9788930088701
+
+22:
+  id: 22
+  genre: 인문학
+  title: 인성과 생각머리를 키워 주는 인문학 생각사전
+  author: 양태석 글, 추덕영 그림
+  publisher: 세종주니어
+  quantity: 4
+  lost: 1
+  isbn: 9788984079038
+
+23:
+  id: 23
+  genre: 사회과학
+  title: '테크놀로지: 문명을 읽는 새로운 코드'
+  author: 다니엘 R. 헤드릭/김영태
+  publisher: 다른세상
+  quantity: 6
+  lost: 0
+  isbn: 9788977661875
+
+24:
+  id: 24
+  genre: 사회과학
+  title: 로봇은 인간을 지배할 수 있을까
+  author: 이종호
+  publisher: 북카라반
+  quantity: 8
+  lost: 2
+  isbn: 9791160050004
+
+25:
+  id: 25
+  genre: 자연과학
+  title: 소행성 적인가 친구인가
+  author: 플로리안 프라이슈테터/유영미
+  publisher: 갈매나무
+  quantity: 3
+  lost: 0
+  isbn: 9788993635713
+
+26:
+  id: 26
+  genre: 실용일반
+  title: 사춘기 수호천사
+  author: 이범, 홍은경
+  publisher: 다산지식하우스
+  quantity: 5
+  lost: 0
+  isbn: 9791130608341
+
+27:
+  id: 27
+  genre: 유아아동
+  title: 빗방울이 후두둑
+  author: 전미화
+  publisher: 사계절
+  quantity: 3
+  lost: 1
+  isbn: 9788958289920
+
+28:
+  id: 28
+  genre: 유아아동
+  title: 코 없는 벅수
+  author: 엄수경 글, 양준호 그림
+  publisher: 문학들
+  quantity: 7
+  lost: 0
+  isbn: 9791186530191
