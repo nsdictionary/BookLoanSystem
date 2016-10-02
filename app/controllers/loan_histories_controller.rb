@@ -1,4 +1,5 @@
 class LoanHistoriesController < ApplicationController
+	before_action :authenticate_user!
   before_action :set_loan_history, only: [:show, :edit, :update, :destroy]
 
   # GET /loan_histories
