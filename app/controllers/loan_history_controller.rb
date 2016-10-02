@@ -1,2 +1,0 @@
-class LoanHistoryController < ApplicationController
-end

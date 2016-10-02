@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>도서 대출 현황</h1>
+
+<table class="table table-striped table-bordered table-condensed table-hover">
+  <thead>
+    <tr>
+      <th>유저</th>
+      <th>도서명</th>
+      <th>대출 일시</th>
+      <th>반납 일시</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @loan_histories.each do |loan_history| %>
+      <tr>
+        <td><%= loan_history.user_id %></td>
+        <td><%= loan_history.book_id %></td>
+        <td><%= loan_history.loan_date %></td>
+        <td><%= loan_history.return_date %></td>
+<!--         <td><%= link_to 'Show', loan_history %></td> -->
+<!--         <td><%= link_to 'Edit', edit_loan_history_path(loan_history) %></td> -->
+<!--         <td><%= link_to 'Destroy', loan_history, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!-- <%= link_to 'New Loan History', new_loan_history_path %> -->
