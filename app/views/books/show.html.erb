@@ -1,5 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<%
+@loanCount = @book.loan_histories.where(return_date: nil).count
+@canLoanCount = @book.quantity - @book.lost - @loanCount
+@myLoanCount = @book.loan_histories
+  .where(user_id: current_user.id, return_date: nil).count
+%>
+
 <p>
   <strong>Genre:</strong>
   <%= @book.genre %>
@@ -31,9 +38,24 @@
 </p>
 
 <p>
+  <strong>대출증:</strong>
+  <%= @loanCount %>
+</p>
+
+<p>
+  <strong>대출가능 수:</strong>
+  <%= @canLoanCount %>
+</p>
+
+<p>
+  <strong>내가 대출한 수:</strong>
+  <%= @myLoanCount %>
+</p>
+
+<p>
   <strong>Isbn:</strong>
   <%= @book.isbn %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
+<!-- <%= link_to 'Edit', edit_book_path(@book) %> | -->
 <%= link_to 'Back', books_path %>

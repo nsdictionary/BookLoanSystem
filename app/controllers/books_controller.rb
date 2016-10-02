@@ -5,7 +5,13 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    @books = Book.all
+	@books = Book.all
+# 	@books.each do |book|
+# 		book[:loanCount] = book.loan_histories.where(return_date: nil).count
+# 	    book.canLoanCount = book.quantity - book.lost - @loanCount
+# 	    book.myLoanCount = book.loan_histories
+# 	      .where(user_id: current_user.id, return_date: nil).count
+#     end
   end
 
   # GET /books/1

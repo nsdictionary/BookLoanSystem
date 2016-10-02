@@ -4,7 +4,7 @@ class LoanHistoriesController < ApplicationController
   # GET /loan_histories
   # GET /loan_histories.json
   def index
-    @loan_histories = LoanHistory.all
+    @loan_histories = LoanHistory.where(user_id: current_user.id)
   end
 
   # GET /loan_histories/1
