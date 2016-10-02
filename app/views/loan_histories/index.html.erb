@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>도서 대출 현황</h1>
+<h1>내 도서 대출 현황</h1>
 
 <table class="table table-striped table-bordered table-condensed table-hover">
   <thead>
@@ -8,6 +8,7 @@
       <th>도서명</th>
       <th>대출 일시</th>
       <th>반납 일시</th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
@@ -17,19 +18,27 @@
         <td><%= loan_history.book.title%></td>
         <td><%= loan_history.loan_date %></td>
         <% if loan_history.return_date %>
-		  <td><%= loan_history.return_date %></td>
-		<% else %>
-		  <td>대여중</td>
-		<% end %>
+			    <td><%= loan_history.return_date %></td>
 
-<!--         <td><%= link_to 'Show', loan_history %></td> -->
-<!--         <td><%= link_to 'Edit', edit_loan_history_path(loan_history) %></td> -->
-<!--         <td><%= link_to 'Destroy', loan_history, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+				  <td><font color='blue'>반납 완료</font></td>
+				  <td>
+					<%=
+					link_to '내역 삭제', loan_history, method: :delete,
+					data: { confirm: '정말로 대출 내역을 삭제하시겠습니까?' }
+					%>
+					</td>
+			  <% else %>
+				  <td>대여중</td>
+				  <td>
+					<%=
+					link_to '반납', edit_loan_history_path(loan_history.id),
+					data: { confirm: '정말로 반납 하시겠습니까?' }
+					%>
+					</td>
+				  <td></td>
+				<% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
-
 <br>
-
-<!-- <%= link_to 'New Loan History', new_loan_history_path %> -->

@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources :loan_histories
   devise_for :users
+
   resources :books
+  resources :loan_histories
+
   root :to => "books#index"
 
 end

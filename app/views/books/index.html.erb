@@ -40,20 +40,35 @@
         <td><%= link_to '상세', book %></td>
         <% if @canLoanCount > 0 %>
           <% if @myLoanCount == 0 %>
-		    <td><%= link_to '대출',
+		    <td>
+			  <%= link_to '대출',
 	        loan_histories_url(
 	        	:user_id => current_user.id,
 	        	:book_id => book.id,
-	        	:loan_date => '2016-01-01',
-	        	:return_date => '2016-01-01'
-	        ), method: :post%></td>
+	        	:loan_date => Date.today.to_s,
+	        	:return_date => nil
+	        ), method: :post, data: { confirm: '정말로 대출 하시겠습니까?' }
+	        %>
+	        </td>
+	        <td></td>
 		  <% else %>
-		    <td><font color='red'>현재 대출중</font></td>
+		    <td>
+			    <font color='red'>현재 대출중</font>
+			</td>
+		    <td>
+		    <%=
+  			link_to '반납', edit_loan_history_path(
+	  			book.loan_histories.where(user_id: current_user.id, book_id: book.id).ids.first
+  			), data: { confirm: '정말로 반납 하시겠습니까?' }
+	  		%>
+			</td>
 		  <% end %>
 		<% else %>
 		  <td><font color='red'>대여 불가</font></td>
+		  <td></td>
 		<% end %>
-        <td><%= link_to '반납', book, method: :post, data: { confirm: '정말로 반납 하시겠습니까?' } %></td>
+
+<!-- , data: { confirm: '정말로 반납 하시겠습니까?' } -->
 <!--         <td><%= link_to 'Edit', edit_book_path(book) %></td> -->
 <!--         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
