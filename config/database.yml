@@ -30,6 +30,7 @@ test:
 production:
   <<: *default
   adapter: postgresql
+  host: ec2-54-235-254-56.compute-1.amazonaws.com
   database: book_system
-  username: myapp
-  password: password1
+  username: yyjbfwkgnlgvuq
+  password: _dHa_7aBzw779YnkfWf3X27gOB
